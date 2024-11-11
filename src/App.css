@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: black;
+  padding: 0;
+  font-family: 'Avenir', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body, #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+
+.header {
+  margin-top: 0;
+  padding: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+  background-color: black;
+  z-index: 1000; /* Assicura che l'header sia sopra altri elementi */
+}
+.footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0;
+  background-color: black;
+  color: beige;
+  z-index: 1000; /* Assicura che l'header sia sopra altri elementi */
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 3em;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+  margin-right: 7em;
+}
+.navbar-link {
+  color: #f5f5dc;
+  margin: 0 0 0 1em;
+}
+.navbar-link:hover {
+  color: brown; /* Colore marrone al passaggio del mouse */
+}
+
+
+
+.homepage {
+  margin: 2em 5em;
+  padding: 1em;
+  color: beige;
+}
+.intro {
+  margin: 0 15em;
+}
+
+
